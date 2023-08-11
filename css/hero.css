@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.specbee-hero {
+  width: 100%;
+  background: #0020f6 url("https://www.specbee.com/themes/custom/specbee/assets/media/webp/billboard-bg.webp");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.specbee-hero__line {
+  margin-top: 210px;
+  width: 130px;
+  height: 17px;
+  background-color: #e3f307;
+}
+.specbee-hero__wrapper-2 {
+  display: flex;
+}
+.specbee-hero__container-2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.specbee-hero__container {
+  width: 50%;
+  padding-top: 180px;
+  padding-left: 60px;
+  padding-bottom: 120px;
+}
+.specbee-hero__title {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.specbee-hero__desc {
+  margin-bottom: 30px;
+}
+.specbee-hero--link button {
+  height: 40px;
+  width: 220px;
+  background-color: #e3f307;
+  border: 1px solid #e3f307;
+  border-radius: 5px;
+  color: #0020f6;
+}
+.specbee-hero--link button:hover {
+  height: 40px;
+  width: 220px;
+  background-color: #0020f6;
+  border: 1px solid #e3f307;
+  border-radius: 5px;
+  color: #e3f307;
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+  .specbee-hero__line {
+    display: none;
+  }
+  .specbee-hero__container {
+    width: 90%;
+    padding-top: 180px;
+    padding-left: 60px;
+    padding-bottom: 120px;
+  }
+  .specbee-hero__title {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  .specbee-hero__desc {
+    margin-bottom: 40px;
+  }
+  .specbee-hero--link button {
+    height: 38px;
+    width: 240px;
+  }
+  .specbee-hero--link button:hover {
+    height: 38px;
+    width: 260px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .specbee-hero {
+    width: 100%;
+  }
+  .specbee-hero__line {
+    margin-top: 160px;
+    width: 90px;
+    height: 15px;
+    background-color: #e3f307;
+  }
+  .specbee-hero__wrapper {
+    margin-left: 20px;
+  }
+  .specbee-hero__title {
+    font-size: 23px;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .specbee-hero__container {
+    width: 100%;
+    padding-top: 150px;
+    padding-left: unset;
+    padding-bottom: 30px;
+  }
+  .specbee-hero__desc {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: -60px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,66 @@
+@use './abstract/colors' as *;
+.smart-solution{
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+    &__cont{
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        display:flex;
+        flex-direction: column;
+
+        &-1{
+            display:flex;
+            flex-direction: column-reverse;
+            @media screen and (min-width:700px) {
+                display: flex;
+                flex-direction: row;
+
+            }
+            &__subsection{
+                margin-bottom: 4rem;
+                @media screen and (min-width:700px) {
+                    width: 100%;
+                    margin-right: 56px;
+
+                }
+                &-2{
+                @media screen and (min-width:700px) {
+                    width: 100%;
+                    margin-right: unset;
+                    margin-left:56px ;
+
+                }
+                }
+            }
+        }
+        &-2{
+            @media screen and (min-width:700px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 50px;
+            }
+        }
+    }
+    &__img img{
+        width: 100%;
+    }
+    &__title{
+        color: $primary-blue;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+    &__desc{
+        font-size: 1rem;
+        line-height: 1.65;
+        margin-bottom: 2.5rem;
+        @media screen and (min-width:700px) {
+           font-size: 1.1rem;
+        }
+    }
+}

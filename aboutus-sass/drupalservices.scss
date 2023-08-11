@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@300&display=swap');
+@use'./abstract/colors' as *;
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+.drupal{
+    &-services{
+    background-color:$secondary-blue ;
+    @media only screen and (min-width:375px )and (max-width:667px) {
+            padding-bottom: 85px;
+            padding-top: 85px;
+    }
+    @media only screen and (min-width:668px )and (max-widthdx:1024px){
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    &__heading{
+        margin-top: 0;
+        font-size:5rem;
+        padding-top:5rem;
+        color:$primary-white;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+        margin-top: 0;
+        font-size:2.5rem;
+        padding-top:unset;
+        color:$primary-white;
+        margin-bottom: 30px;
+        padding-left: 80px;
+        }
+        @media only screen and (min-width:668px )and (max-widthdx:1024px){
+            padding-top: unset;
+            width: 50%;
+        }
+        &::before{
+            content: "";
+            height:0.75rem;
+            width:150px;
+            display:inline-block;
+            margin-bottom:15px;
+            vertical-align: middle;
+            margin-right:50px;
+            background-color: $primary-yellow;
+            @media only screen and (min-width:375px )and (max-width:667px) {
+                content: "";
+                position: absolute;
+                height:0.65rem;
+                width:40px;
+                display:inline-block;
+                margin-bottom:15px;
+                vertical-align: middle;
+                margin-right:unset;
+                background-color:$secondary-yellow;
+                margin-right: 10px;
+                left: 0;
+            }
+            @media only screen and (min-width:668px )and (max-widthdx:1024px){
+                display: none;
+            }
+        }
+    }
+    }
+}
+.service{
+    &__image__wrapper{
+        background-image: url('https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon.svg');
+        background-repeat: no-repeat;
+        height: 15rem;
+        width: 15rem;
+        background-position-x: 50%;
+        background-position-y:center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+        &:before{
+            background: url('https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon-line.svg') no-repeat 50%/contain;
+            content: "";
+            height: 17.5rem;
+            position: absolute;
+            top: -1.125rem;
+            transform: scale(.5);
+            transition: all .2s ease-in-out;
+            width: 17.5rem;
+            z-index: -1;
+        }
+        &:hover:before{
+            transform: scale(1);
+            z-index: 1;
+        }
+        img{
+            width:6rem;
+        }
+    }
+    &__wrapper{
+        max-width: 65rem;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        gap:2.5rem;
+        padding-bottom: 50px;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 75px;
+        padding:0px 20px
+        }
+    }
+    &__card{
+        width:30%;
+        text-align: center;
+        color: $primary-white;
+        position: relative;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+            width:unset;
+        }
+    }
+    &--link{
+        text-decoration: none;
+        color: $primary-white;
+    }
+    &__desc{
+        margin-top: 15px;
+        font-size: 1rem;
+        font-weight: 400;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+            margin-top: 15px;
+        }
+    }
+    &__title{
+        font-size:1.5rem;
+        margin-top: 20px;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+            font-size:1.25rem;
+            font-weight: 900;
+        }
+        @media only screen and (min-width:668px )and (max-widthdx:1024px){
+            font-size:1.1rem;
+            margin-top: 20px;
+            font-weight: 900;
+        }
+    }
+}

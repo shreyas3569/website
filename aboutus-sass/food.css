@@ -1,0 +1,59 @@
+.food {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.food__wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 24px;
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .food__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .food__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+.food__wrapper__title {
+  font-size: 25px;
+}
+.food__wrapper__cards {
+  width: 33%;
+  display: flex;
+  border: 2px solid #f2f2f2;
+  padding: 16px;
+  flex-direction: column;
+}
+.food__wrapper__cards img {
+  width: 100%;
+  height: auto;
+}
+.food__wrapper__cards__head {
+  display: flex;
+}
+.food__wrapper__cards__content {
+  margin-left: 30px;
+}
+.food__wrapper__cards__desc {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  --truncate-lines: 2;
+  -webkit-line-clamp: var(--truncate-lines);
+  -webkit-box-orient: vertical;
+}
+.food__wrapper__cards__reply {
+  display: flex;
+  gap: 1rem;
+  padding-right: 8px;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=food.css.map */

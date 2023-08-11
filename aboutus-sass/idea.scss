@@ -1,0 +1,44 @@
+@use'./abstract/colors' as *;
+.ideas{
+    background-color: $secondary-blue;
+    color: $primary-white;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    text-align: center;
+    &--button{
+        height: 40px;
+        width:160px;
+        background-color: $secondary-yellow;
+        border: 1px solid $secondary-yellow;
+        border-radius: 5px;
+        color: $secondary-blue;
+        margin-right: 20px;
+        font-size: .85rem;
+        font-weight: 900;
+        letter-spacing: .125rem;
+        margin-top: 3.5rem;
+        transition: all .25s ease-in-out;
+        &:hover{
+            height: 40px;
+            width:160px;
+            background-color:$secondary-blue;
+            border: 1px solid $secondary-yellow;
+            border-radius: 5px;
+            color: $secondary-yellow;
+            transition: all .25s ease-in-out;
+        }
+    }
+    &__heading{
+        font-size: 3.375rem;
+        margin-bottom: 1.25rem;
+        font-weight: 900;
+    }
+}
+@media only screen and (min-width:375px )and (max-width:667px){
+    .ideas__heading{
+        font-size: 1.85rem;
+        margin-bottom: 1.25rem;
+        font-weight: 900;
+        padding: 10px;
+    }
+}

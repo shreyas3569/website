@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.drupal-things {
+  width: 100%;
+}
+.drupal-things__wrapper {
+  margin-left: 130px;
+  margin-right: 130px;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.drupal-things__container {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.drupal-things__container-sub {
+  display: flex;
+}
+.drupal-things__container-2 {
+  margin-top: -40px;
+  margin-left: 60px;
+  font-weight: 400;
+}
+.drupal-things__container-2__title {
+  margin-bottom: 25px;
+  color: #001186;
+  font-weight: 800;
+  font-size: 24px;
+}
+.drupal-things__list {
+  margin-top: 30px;
+  list-style: none;
+}
+.drupal-things__list li::before {
+  content: "•";
+  color: #001186;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.drupal-things__solution {
+  display: flex;
+}
+.drupal-things__solution-content {
+  margin-right: 30px;
+}
+.drupal-things__solution__desc {
+  margin-bottom: 30px;
+}
+.drupal-things__img {
+  object-fit: cover;
+  width: 100%;
+}
+.drupal-things__img img {
+  width: 100%;
+}
+.drupal-things__talk {
+  margin-top: 40px;
+}
+.drupal-things__talk--link {
+  color: #001186;
+  text-decoration: none;
+  font-weight: 900;
+}
+.drupal-things__talk--link:hover {
+  color: #0020f6;
+  font-weight: bolder;
+}
+
+.fa-phone {
+  display: none;
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+  .drupal-things__wrapper {
+    margin-left: unset;
+    margin-right: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .drupal-things__img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+  }
+  .drupal-things__img img {
+    width: 100%;
+  }
+  .drupal-things__solution-content {
+    margin-right: 0;
+    padding-right: 20px;
+  }
+  .img {
+    flex-basis: 2;
+  }
+  .fa-phone {
+    display: none;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .drupal-things {
+    width: 100%;
+  }
+  .drupal-things__container {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+  .drupal-things__container-sub {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .drupal-things__container-2 {
+    margin-top: 0px;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .drupal-things__container-3 {
+    margin-top: 30px;
+  }
+  .drupal-things__wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: unset;
+    padding-right: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  .drupal-things__video iframe {
+    width: 100%;
+  }
+  .drupal-things__solution {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .drupal-things__solution-content {
+    order: 2;
+  }
+}
